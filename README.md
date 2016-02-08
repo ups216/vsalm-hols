@@ -1,4 +1,4 @@
-# Visual Studio Application Lifecycle Mangement Hands On labs
+# Microsoft Application Lifecycle Mangement Hands On labs
 This repo is hosting resouces to learn how to use Microsoft Lifecycle Mangement systems, including Team Foundation Server, 
 Visual Studio and other related tools. 
 
