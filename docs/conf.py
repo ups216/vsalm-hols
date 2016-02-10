@@ -202,10 +202,10 @@ usepackage{CJKutf8}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [
-  ('latex', 'vsalm-hols.tex', u'VSALM HOL 文档',
-   AUTHORS, 'manual'),
-]
+#latex_documents = [
+#  ('latex', 'vsalm-hols.tex', u'VSALM HOL 文档',
+#   AUTHORS, 'manual'),
+#]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
