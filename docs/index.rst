@@ -18,5 +18,7 @@ VSALM 训练营
 概述
 -----
 
-Visual Studio 应用生命周期管理
+Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifecycle Managemnet）
+
+
 
