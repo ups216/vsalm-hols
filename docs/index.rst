@@ -19,7 +19,7 @@ Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifec
 
 具体信息可以通过 `Visual Studio <https://www.visualstudio.com/>`_ 产品主页进行了解，
 
-或者参考本文档中 `关于VSALM <concept/about-vsalm>`_ 部分
+或者参考本文档中 关于VSALM 部分
 
 
 内容
