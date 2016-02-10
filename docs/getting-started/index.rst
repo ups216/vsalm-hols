@@ -6,3 +6,5 @@
 
    setting-up-account
    access-lab-vm
+   sample-project-introduction
+
