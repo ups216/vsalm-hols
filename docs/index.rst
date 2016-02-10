@@ -30,7 +30,8 @@ Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifec
 - 发布管理（Release Management）
 - 自动化和数据分析与报表 
 
-等软件开发过程中所需的管理能力和工具。
+等软件开发过程中所需的管理能力和工具。具体信息可以通过 `Visual Studio <https://www.visualstudio.com/>`_ 产品主页进行了解，或者参考本文档中 关于VSALM 部分。
+
 
 
 
