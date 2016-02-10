@@ -39,7 +39,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'VSALM HOLS'
+project = u'VSALM 动手实验'
 AUTHORS = u"徐磊"
 copyright = u'2016, '+AUTHORS
 
