@@ -4,7 +4,7 @@
 .. toctree::
    :titlesonly:
 
-   agile-planning-and-portfolio-management
-   continues-delivery
-   fix-production-issue
+    |stub-icon| agile-planning-and-portfolio-management
+    |stub-icon| continues-delivery
+    |stub-icon| fix-production-issue
    

@@ -5,5 +5,5 @@
    :titlesonly:
 
    about-vsalm.rst
-   about-software-engineering
-   about-agile-software-development
+    |stub-icon| about-software-engineering
+    |stub-icon| about-agile-software-development

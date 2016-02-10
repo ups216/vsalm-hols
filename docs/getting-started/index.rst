@@ -4,7 +4,7 @@
 .. toctree::
    :titlesonly:
 
-   setting-up-account
-   access-lab-vm
-   sample-project-introduction
+    |stub-icon| setting-up-account
+    |stub-icon| access-lab-vm
+    |stub-icon| sample-project-introduction
 
