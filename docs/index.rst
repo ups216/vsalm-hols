@@ -27,7 +27,8 @@ Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifec
 - 源代码管理（SCM）
 - 测试管理
 - 持续集成（CI）
-- 发布管理（Release Management）及自动化
+- 发布管理（Release Management）
+- 自动化和数据分析与报表 
 
 等软件开发过程中所需的管理能力和工具。
 
