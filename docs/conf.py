@@ -98,8 +98,8 @@ pygments_style = 'sphinx'
 #keep_warnings = False
 
 rst_epilog = """
-#.. include:: /../common/authors.txt
-#"""
+.. include:: /../common/authors.txt
+"""
 
 # -- Options for HTML output ----------------------------------------------
 
