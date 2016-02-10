@@ -1,6 +1,6 @@
 .. _rst_vsalm-hoc
 
-VSALM 训练营
+VSALM 动手实验
 =================
 
 .. |stub-icon| unicode:: U+1F527
