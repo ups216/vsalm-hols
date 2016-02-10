@@ -184,7 +184,7 @@ if on_rtd:
     #'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
-    'babel'     : r'''\usepackage[english]{babel}''',
+    'babel'     : r'''\usepackage[chinese]{babel}''',
     'preamble': r'''
     \hypersetup{unicode=true}
     \usepackage{CJKutf8}
