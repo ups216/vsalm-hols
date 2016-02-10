@@ -4,7 +4,7 @@
 .. toctree::
    :titlesonly:
 
-    |stub-icon| setting-up-account
-    |stub-icon| access-lab-vm
-    |stub-icon| sample-project-introduction
+    setting-up-account
+    access-lab-vm
+    sample-project-introduction
 
