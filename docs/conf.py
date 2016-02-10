@@ -40,7 +40,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'VSALM 动手实验'
-AUTHORS = u"徐磊"
+AUTHORS = u"LeiXu@devopshub.cn"
 copyright = u'2016, '+AUTHORS
 
 # The version info for the project you're documenting, acts as replacement for
