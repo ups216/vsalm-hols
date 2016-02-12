@@ -19,11 +19,11 @@ $vmName = "TFS2015U1CHS"
 $sourceServiceName = "azurelab001"
 
 # Target
-$destSubscriptionName = 'LeiXuPrepaid'
+$destSubscriptionName = 'LeiXuVSEnterprisePrepaid'
 $destSubscriptionSettingFile = 'LeiXuPrepaid-LeiXuVSEnterprisePrepaid-2-12-2016-credentials.publishsettings'
-$destVNetName = 'azurelab003-vnet'
-$destStorageAccountName = 'azurelab003sa'
-$destServiceName = 'azurelab003'
+$destVNetName = 'azurelab002-vnet'
+$destStorageAccountName = 'azurelab002sa'
+$destServiceName = 'azurelab002'
 
 #######################################################
 #Remove All Subscription
@@ -73,9 +73,9 @@ $destStorageKey = (Get-AzureStorageKey -StorageAccountName $destStorageName).Pri
 ####################################################### 
 $sourceContext = New-AzureStorageContext –StorageAccountName $sourceStorageName -StorageAccountKey $sourceStorageKey -Environment $CloudEnv
 $destContext = New-AzureStorageContext –StorageAccountName $destStorageName -StorageAccountKey $destStorageKey -Environment $CloudEnv
-
 $allDisks = @($sourceOSDisk) + $sourceDataDisks
 $destDataDisks = @()
+
 foreach($disk in $allDisks)
 {
     $blobName = $disk.MediaLink.Segments[2]
@@ -98,11 +98,19 @@ foreach($disk in $allDisks)
         $destDataDisks += $targetBlob
     }
 }
+
+####################################################### 
+# change target machine and disk names
 ####################################################### 
 
+$targetDiskName = $sourceOSDisk.DiskName + "-" + $destServiceName
+(Get-Content $vmConfigurationPath).replace($sourceOSDisk.DiskName, $targetDiskName) | Set-Content $vmConfigurationPath
+
+####################################################### 
 #Create Target VM and Boot it up!
 ####################################################### 
-Add-AzureDisk -OS $sourceOSDisk.OS -DiskName $sourceOSDisk.DiskName -MediaLocation $destOSDisk.ICloudBlob.Uri
+
+Add-AzureDisk -OS $sourceOSDisk.OS -DiskName $targetDiskName -MediaLocation $destOSDisk.ICloudBlob.Uri
 foreach($currenDataDisk in $destDataDisks)
 {
     $diskName = ($sourceDataDisks | ? {$_.MediaLink.Segments[2] -eq $currenDataDisk.Name}).DiskName

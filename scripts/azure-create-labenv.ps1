@@ -7,11 +7,11 @@
 ###########################
 
 # Master Name
-$labName = "azurelab003"
+$labName = "azurelab002"
 $dataDir = "d:\data"
 
 # Subscription
-$sourceSubscriptionName = 'LeiXuPrepaid'
+$sourceSubscriptionName = 'LeiXuVSEnterprisePrepaid'
 $sourceSubscriptionSettingFile = 'LeiXuPrepaid-LeiXuVSEnterprisePrepaid-2-12-2016-credentials.publishsettings'
 
 # Networking, Storage and Cloud Service
@@ -26,9 +26,9 @@ $myStorageAccountName = "$($labName)sa"
 # Machines
 $myImageFamily = "Windows Server 2012 R2 Datacenter (zh-cn)"
 $myVmName = "TFS2015U1CHS"
-#Allowed values are 'ExtraSmall, Small, Medium, Large,ExtraLarge,A5,A6,A7,Basic_A0,Basic_A1,Basic_A2,Basic_A3,Basic_A4,Standard_D1,Standard_D2,Standard_D3,Standard_D4,Stand
-#ard_D11,Standard_D12,Standard_D13,Standard_D14,Standard_DS1,Standard_DS2,Standard_DS3,Standard_DS4,Standard_DS11,Standard_DS12
-#,Standard_DS13,Standard_DS14'.
+#Allowed values are 'ExtraSmall, Small, Medium, Large,ExtraLarge,
+#A5,A6,A7,Basic_A0,Basic_A1,Basic_A2,Basic_A3,Basic_A4,
+#Standard_D1,Standard_D2,Standard_D3,Standard_D4,Standard_D11,Standard_D12,Standard_D13,Standard_D14,Standard_DS1,Standard_DS2,Standard_DS3,Standard_DS4,Standard_DS11,Standard_DS12,Standard_DS13,Standard_DS14'.
 $myVmSize = "Small";
 
 ####################################################### 
