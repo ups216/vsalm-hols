@@ -1,4 +1,6 @@
 ﻿
+#ref: https://blogs.blackmarble.co.uk/blogs/rhepworth/post/2014/03/04/Creating-Azure-Virtual-Networks-using-Powershell-and-XML-Part-2-Powershell-functions.aspx
+
 ####################################
 # usage example
 ####################################
