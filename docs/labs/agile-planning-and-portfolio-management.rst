@@ -19,51 +19,51 @@
 
 1.	|使用用户名Administrato登陆。所有用户的秘密都为TFS-2015
 
-2.	从任务栏中打开IE浏览器并从收藏栏中打开TFS FF Portal链接。
+2.	从任务栏中打开IE浏览器并从收藏栏中打开TFS Web Portal链接。
 
-.. figure:: images/练习1-test1的默认团队的团队主页.png
+.. figure:: images/Exercise 1-Open TFS Web Portal from Browse.png
 
 3.	从TFS主页中，选择“浏览”按钮打开项目和团队信息。
 
-.. figure:: images/练习1-浏览项目和团队.png
+.. figure:: images/Exercise 1-Browse Projects and Teams.png
 
 4.  选择test1项目和默认的团队。
 
-.. figure:: images/练习1-选择test1项目和默认的团队.png
+.. figure:: images/Exercise 1-Select Project test1 and default team.png
 
 5.	接下来会出现test1默认团队的主页视图。该视图提供包含各种信息的卡片组合，例如查询结果卡片、新建工作项卡片、冲刺燃尽图卡片、团队成员卡片等等。
 
-.. figure:: images/练习1-test1的默认团队的团队主页.png
+.. figure:: images/Exercise 1-The team Portal of Project test1 default team.png
 
 任务二：使用积压工作项进行工作
 …………………………………………………………………………
 
 1.	通过选择“Work”标签来导航到积压工作项界面
 
-.. figure:: images/练习1-浏览项目和团队.png
+.. figure:: images/Exercise 1-Go to Backlog UI.png
 
 2.	产品积压工作项可以帮助我们定义那些需要做的工作。一旦你拥有一个积压工作，你可以用它来管理当工作完成或与工作项关联的事项被迁入时，测试通过时，或者其他一些相关事项发生时等事件
 
-.. figure:: images/练习1-积压工作界面.png
+.. figure:: images/Exercise 1-The Backlog UI.png
 
 3.	试想下当我们的团队成员被要求实现一个新的用户故事。这个用户故事可以使顾客可以从网站上了解相关的天气服务。这个用户故事应该被设置为高优先级，因为很多客户都对这个服务提出使用要求。选择最后一行的产品积压工作项然后创建一个标题为“客户想要在门户网站上使用天气服务”的积压工作项。
 
-.. figure:: images/练习1-创建天气服务工作项.png
+.. figure:: images/Exercise 1-Create the weather service backlog item.png
 
 4.	在产品积压工作列表中，工作项是按照优先级来进行排序的，高优先级位于最上面。我们刚才创建的工作项拥有高优先级，所有我们应该将它拖拽到列表的最顶端。
 
-.. figure:: images/练习1-拖拽工作项以排序.png
+.. figure:: images/Exercise 1-Drag and Drop backlog item for list.png
 
 5.	双击打开我们刚创建的工作项，我们可以在工作项信息界面中配置该工作项的详细信息。
 
 6.	将该工作项指派给Administrator，设置状态为“已批准”，将工作量设置为8。点击”保存并关闭“按钮
 
-.. figure:: images/练习1-编辑工作项的详细信息.png
+.. figure:: images/Exercise 1-Edit the detail information of backlog item.png
 
 7.	通过将刚创建的工作项拖拽到当前的迭代上来指定该工作项处于当前的迭代周期内。
 
-.. figure:: images/练习1-拖拽工作项到当前迭代中.png
+.. figure:: images/Exercise 1-Drag and Drop backlog item to current iteration.png
 
 8.	可以在列表中检查该工作项的“迭代路径”列的值来确定该工作项是否已分配到当前迭代周期内。只有当该工作项的状态设置为“完成”时，该工作项会从该列表中消失。
 
-.. figure:: images/练习1-检验工作项的迭代路径.png
+.. figure:: images/Exercise 1-Check the backlog item iteration.png
