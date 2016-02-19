@@ -21,7 +21,7 @@
 
 2.	从任务栏中打开IE浏览器并从收藏栏中打开TFS Web Portal链接。
 
-.. figure:: images/Exercise 1-Open TFS Web Portal from Browse.png
+.. figure:: images/Exercise-1-Open-TFS-Web-Portal-From-Browse.png
 
 3.	从TFS主页中，选择“浏览”按钮打开项目和团队信息。
 
