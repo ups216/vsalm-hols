@@ -66,4 +66,4 @@
 
 8.	可以在列表中检查该工作项的“迭代路径”列的值来确定该工作项是否已分配到当前迭代周期内。只有当该工作项的状态设置为“完成”时，该工作项会从该列表中消失。
 
-.. figure:: images/Exercise 1-Check the backlog item iteration.png
+.. figure:: images/Exercise-1-Check-the-backlog-item-iteration.png
