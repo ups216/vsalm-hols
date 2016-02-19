@@ -15,7 +15,7 @@
 本次练习中，您将会学到如何利用TFS2015来管理您的积压工作、创建工作项、将工作细化成任务、分配任务给指定成员、用任务看板来跟踪任务状态。本次练习中所使用的项目管理工具适用于中小型开发团队进行项目开发。
 
 任务一
-………………
+^^^^^^
 
 1.	|使用用户名Administrato登陆。所有用户的秘密都为TFS-2015
 
@@ -36,7 +36,7 @@
 .. figure:: images/Exercise-1-The-team-Portal-of-Project-test1-default-team.png
 
 任务二：使用积压工作项进行工作
-…………………………………………………………………………
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1.	通过选择“Work”标签来导航到积压工作项界面
 
@@ -58,7 +58,7 @@
 
 6.	将该工作项指派给Administrator，设置状态为“已批准”，将工作量设置为8。点击”保存并关闭“按钮
 
-.. figure:: images/Exercise-1-Edit -the-detail-information-of-backlog-item.png
+.. figure:: images/Exercise-1-Edit-the-detail-information-of-backlog-item.png
 
 7.	通过将刚创建的工作项拖拽到当前的迭代上来指定该工作项处于当前的迭代周期内。
 
