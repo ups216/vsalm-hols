@@ -17,7 +17,7 @@
 任务一
 ^^^^^^
 
-1.	|使用用户名Administrato登陆。所有用户的秘密都为TFS-2015
+1.	使用用户名Administrato登陆。所有用户的秘密都为TFS-2015
 
 2.	从任务栏中打开IE浏览器并从收藏栏中打开TFS Web Portal链接。
 
