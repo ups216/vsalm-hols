@@ -21,7 +21,15 @@
 其中左边的描述是右边原则的重点。
 
 
+参考
+~~~~~~~~~~~~~~~~~~~~~~
+
+*  `敏捷开发宣言`_
+*  `维基百科敏捷开发`_ 
+
+
 .. _敏捷软件开发宣言: http://www.agilemanifesto.org/iso/zhchs/ 
+.. _维基百科敏捷开发： https://zh.wikipedia.org/wiki/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91
 
 
 
