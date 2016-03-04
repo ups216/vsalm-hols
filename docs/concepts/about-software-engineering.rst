@@ -14,7 +14,7 @@
 ~~~~~~~~~~~~~~~~~~~~~
 1995年，Standish Group研究机构以美国境内8000个软件项目作为调查样本，调查结果显示，有84％软件计划无法于既定时间、经费中完成，超过30％的计划于执行中被取消，项目预算平均超出189％。
 
-**美国银行信托软件系统开发案**
+**案例：美国银行信托软件系统开发案**
 
 美国银行1982年进入信托商业领域，并规划发展信托软件系统。计划原订预算 **2千万美元** ，开发时程9个月，预计于1984年12月31日以前完成，后来至1987年3月都未能完成该系统，期间已投入 **6千万美元** 。美国银行最终因为此系统不稳定而不得不放弃，并将340亿美元的信托账户转移出去，并失去了 **6亿美元** 的信托生意商机。
 
@@ -61,5 +61,6 @@ ACM与IEEE Computer Society联合修定的SWEBOK（Software Engineering Body of 
 参考资料
 ~~~~~~~~~~~~~~~~~~~~~~
 
-* 维基百科`软件工程 <https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B>`_
-* 维基百科`软件危机 <https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA>`_
+* 维基百科 `软件工程 <https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B>`_
+* 维基百科 `软件危机 <https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA>`_
+* 软件工程的核心知识  `SWEBOK <https://www.computer.org/portal/web/swebok>`_
