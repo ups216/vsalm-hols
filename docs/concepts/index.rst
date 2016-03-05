@@ -4,6 +4,9 @@
 .. toctree::
    :titlesonly:
 
-   about-vsalm.rst
    about-software-engineering
    about-agile-software-development
+   about-scrum
+   about-kanban
+   about-user-story
+   about-vsalm.rst
