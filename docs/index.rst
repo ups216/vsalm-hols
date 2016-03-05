@@ -43,9 +43,9 @@ Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifec
 .. toctree::
     :titlesonly:
     
-    concepts/index
     getting-started/index
     labs/index
+    concepts/index
     
 
 适用版本
