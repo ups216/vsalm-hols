@@ -21,7 +21,7 @@
 
 .. figure:: images/Exercise-1-Open-TFS-Web-Portal-From-Browse.png
 
-2.	使用用户名Administrato登陆。所有用户的秘密都为TFS-2015
+2.	使用用户名liubei登陆。所有用户的秘密都为TFS-2015
 
 .. figure:: images/Exercise-1-Login-TFS-Web-Portal-From-Browse.png
 
