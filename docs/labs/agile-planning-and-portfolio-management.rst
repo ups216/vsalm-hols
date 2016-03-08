@@ -78,10 +78,9 @@
 
 8.	可以在列表中检查该工作项的 **迭代路径** 列的值来确定该工作项是否已分配到当前迭代周期内。
 
+.. figure:: images/Exercise-1-Check-the-backlog-item-iteration.png
+
 .. note:: 
 
     如果工作项的状态设置为 **已关闭** 时，该工作项将会从该列表中消失。这样设计正是表达了“积压工作”的含义，只有那些还没有完成的工作才会被现实在这个列表中。
-
-.. figure:: images/Exercise-1-Check-the-backlog-item-iteration.png
-
---
+    
