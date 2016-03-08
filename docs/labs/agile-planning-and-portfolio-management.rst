@@ -79,3 +79,5 @@
 .. note:: 如果工作项的状态设置为 **已关闭** 时，该工作项将会从该列表中消失。这样设计正是表达了“积压工作”的含义，只有那些还没有完成的工作才会被现实在这个列表中。
 
 .. figure:: images/Exercise-1-Check-the-backlog-item-iteration.png
+
+--
