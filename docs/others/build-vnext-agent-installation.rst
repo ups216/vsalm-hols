@@ -26,7 +26,7 @@ https://github.com/Microsoft/vso-agent-tasks
 Windows环境安装和配置向导
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-请在执行以下步骤前，在您的Windows系统上安装Node.JS，可以中以下地址获取Node.JS安装包：
+请在执行以下步骤前，需要在您的Windows系统上安装Node.JS，可以中以下地址获取Node.JS安装包：
 
 https://nodejs.org 
 
@@ -34,27 +34,29 @@ https://nodejs.org
     一般来说，推荐使用LTS（长久支持版）的Node安装包，并根据您所使用的操作系统的版本选择x64或者x86版本来使用。
     
 
-1. 首先使用 **团队项目集合管理员** 身份登录系统，在系统的右上角点击 **齿轮** 标志进行后台
+1. 首先使用 **团队项目集合管理员** 身份登录系统，在系统的右上角点击 **齿轮** 标志进入后台
 
 .. figure:: images/agent-install-1.png
 
-2. 在后台 **控制面板** 中，点击 **代理池|下载代理** 按钮，并保存下载好的.zip文件
+2. 在后台 **控制面板** 中，点击 **代理池 | 下载代理** 按钮，并保存下载好的.zip文件
 
 .. figure:: images/agent-install-2.png
 
-3. 将zip包内容解压缩至一个本地路径，建议放置在 C:\BuildAgent 目录下面
+3. 将zip包内容解压缩至一个本地路径，建议放置在 C:\\BuildAgent 目录下面
 
 .. figure:: images/agent-install-3.png
 
 4. **以管理员身份** 运行 Windows Powershell 命令行工具，并将ExecutionPolicy设置为Unrestricted，具体命令为
 
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+.. code-block:: powershell
 
-5. 进入 c:\BuildAgent 目录，并运行 ConfigureAgent.cmd 
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+
+5. 进入 c:\\BuildAgent 目录，并运行 ConfigureAgent.cmd 
 
 .. figure:: images/agent-install-4.png
 
-上图对代理名称，服务器地址，代理池名称，工作文件进行了配置。
+上图对代理名称，服务器地址，代理池名称，工作文件夹进行了配置。
 
 对于是否要将代理作为Windows服务进行安装，可以视情况而定，一般来说
 
@@ -65,9 +67,12 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
 .. figure:: images/agent-install-5.png
 
-6. 回到TFS后台 **控制面板** 中，你将可以看到新配置的代理出现在代理池中，并在功能页中列出了这台机器所具备的能力（也就是各种工具）
+6. 回到TFS后台 **控制面板** 中，你将可以看到新配置的代理出现在代理池中，并在功能页中列出了这台机器所具备的能力（也就是当前代理商所安装的各种工具）
 
 .. figure:: images/agent-install-6.png
+
+.. note:: 
+    为了能够支持不同开发语言的编译，测试的打包，我们需要安装不同的工具，如：对于传统的.NET应用，我们需要安装Visual Studio；对于Java应用，需要JDK和Maven/Ant；对于很多前端语言，我们还需要安装Grunt, Gulp等工具。
 
 7. 最后，我们还需要对权限进行配置，你可以将允许管理这个代理的人员加入到 Agent Pool Administrators 这个角色中。
 
