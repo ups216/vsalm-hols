@@ -10,7 +10,7 @@
 练习一：为你的项目添加持续集成能力
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-TFS使用 **生成定义** 来管理项目的持续集成配置，在每一个 **团队项目** 中，可以配置多个 **生成定义** 分别对应不同的代码分支，测试环境或者团队。在这个实验中，我们支队如何配置 **生成定义** 进行描述，关于如何规划您的持续集成方案，请参考：TODO 
+TFS使用 **生成定义** 来管理项目的持续集成配置，在每一个 **团队项目** 中，可以配置多个 **生成定义** 分别对应不同的代码分支，测试环境或者团队。在这个实验中，我们只对如何配置 **生成定义** 进行描述，关于如何规划您的持续集成方案，请参考：TODO 
 
 任务一：创建生成定义
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -25,7 +25,7 @@ TFS使用 **生成定义** 来管理项目的持续集成配置，在每一个 *
 
 .. figure:: images/CI-Exercise-1-Add-Build-Definition-1.png
 
-选择 **团队项目 | 存储库 | 默认分支 | 勾选持续集成 | 默认代理池 ** 并点击 **创建**  
+选择 **存储库源 | 存储库 | 默认分支 | 勾选持续集成 | 默认代理池** 并点击 **创建** 按钮
 
 .. figure:: images/CI-Exercise-1-Add-Build-Definition-2.png
  
@@ -34,19 +34,26 @@ TFS使用 **生成定义** 来管理项目的持续集成配置，在每一个 *
 .. figure:: images/CI-Exercise-1-Modify-build-definition.png
   
 4. 添加 PowerShell 生成步骤 
- 
+
+点击 **添加生成步骤 | 实用工具 | 选中PowerShell** 并点击 **添加** 按钮 
+
 .. figure:: images/CI-Exercise-1-add-powershell-task.png
 
 5. 配置 PowerShell 生成步骤，使用 PartsUnlimited 代码库中内置的 build.ps1 脚本来进行编译
 
 将 PowerShell 生成步骤拖放到顶端，在右侧的 Script filename 和 Arguments 中分别输入：
 
-Script filename = build.ps1
-Arguments = -BuildConfiguration $(BuildConfiguration)
+================    ===========
+    参数              值
+================    ===========
+Script filename     build.ps1
+Arguments           -BuildConfiguration $(BuildConfiguration)
+================    ===========
+
 
 .. figure:: images/CI-Exercise-1-add-powershell-task-buildscript.png
 
-您也可以点击 Script filename 右侧的 **...* 按钮来从代码库中选择 build.ps1 这个脚本文件
+您也可以点击 Script filename 右侧的 **...** 按钮来从代码库中选择 build.ps1 这个脚本文件
 
 .. figure:: images/CI-Exercise-1-add-powershell-task-buildscript-1.png
 
@@ -70,6 +77,7 @@ build.ps1 脚本内容如下：
 
 .. note:: 
     对于许多团队来说，编写一个脚本来进行编译是非常普遍的做法，就如同很多的c应用里面都有个makefile文件一样。这样做的好处是，任何开发人员获取到源代码后都可以直接执行这个脚本来完成如依赖获取，环境配置和编译的操作。
+    
     对于一个采用敏捷开发方式的团队来说，为每一个人和每一个新的环境提供统一，简单的一键式的编译脚本非常重要，这可以大大节省开发人员和测试人员获取新的可运行环境的成本，提高效率。同时，这样做也便于我们在开发人员本地环境和持续集成环境中使用同样的方式来执行自动化，消除同步环境对效率的影响。
 
 6. 保存新的 **生成定义** 
