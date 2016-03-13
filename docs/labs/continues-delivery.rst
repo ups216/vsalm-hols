@@ -160,7 +160,7 @@ Arguments           -BuildConfiguration $(BuildConfiguration)
 
 .. figure:: images/CI-Exercise-1-add-powershell-task-publishscript.png
 
-这个 publish.ps1 脚本将调用 dnu publish 这个命令来完成网站的打包工作，由于我们的网站中用到了很多前段工具，其中还会调用 npm 和 grunt 来完成前端脚本的打包工作。
+这个 publish.ps1 脚本将调用 dnu publish 这个命令来完成网站的打包工作，由于我们的网站中用到了很多前端工具，其中还会调用 npm 和 grunt 来完成前端脚本的打包工作。
 
 publish.ps1 的内容如下：
 
@@ -183,7 +183,7 @@ publish.ps1 的内容如下：
 
 3. 触发生成以便将打包完成的文件上传至服务器
 
-首先按照 *练习一 | 任务二：运行生成* 中的步骤触发生成并等待生成完成。
+按照 *练习一 | 任务二：运行生成* 中的步骤触发生成并等待生成完成。
 
 
 任务二：创建发布定义
@@ -233,6 +233,10 @@ PartsUnlimited_masterCI/drop/artifacts/Publish 这个文件夹，并单击 **确
 
 .. figure:: images/CI-Exercise-2-create-release-definition-7.png
 
+.. note::
+
+    这个文件夹由 *练习二 | 任务一* 创建，如果您看不到这个文件夹，请从新执行这个步骤。
+
 并对以下参数进行配置
 
 .. figure:: images/CI-Exercise-2-create-release-definition-8.png
@@ -258,7 +262,7 @@ Destination Folder   c:\\websites\\test
     
 4. 克隆环境
 
-以上我们已经完成了 **测试环境** 的部署任务配置，为了实验简化目的，我们使用同样服务器的不同端口来模拟不同的环境，因为 **生产环境** 的配置不过是另外一个目录而已。所以，我们使用 **克隆环境** 来完成这一步操作。
+以上我们已经完成了 **测试环境** 的部署任务配置，为了实验简化目的，我们使用同样服务器的不同端口来模拟不同的环境，因此 **生产环境** 的配置不过是另外一个目录而已。所以，我们使用 **克隆环境** 来完成这一步操作。
 
 点击 **测试环境** 右上角的 **...** 标识，并选择 **克隆环境** 
 
@@ -293,13 +297,13 @@ Destination Folder   c:\\websites\\pro
 
 .. figure:: images/CI-Exercise-2-trigger-release.png
 
-在弹出的  **在 测试环境 部署 Release 1** 对话框中点击 **部署** 按钮
+在弹出的  **在 测试环境 上部署 Release 1** 对话框中点击 **部署** 按钮
 
 .. figure:: images/CI-Exercise-2-trigger-release-1.png
 
 3. 查看部署进度
 
-可以看到 **测试环境** 的进度条中显示 **进行中** 或其他状态
+可以看到 **测试环境** 的进度条中显示 **正在进行** 或其他状态
 
 .. figure:: images/CI-Exercise-2-trigger-release-2.png
 
@@ -320,7 +324,9 @@ Destination Folder   c:\\websites\\pro
 
 .. figure:: images/CI-Exercise-2-release-result.png
 
+到这里为止，我们已经完成了我们所规划中的自动化编译和部署，如下图中的灰色部分：
 
+.. figure:: images/CI-planning-chart-01.png
 
 练习三：添加自动化测试
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
