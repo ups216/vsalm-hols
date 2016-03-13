@@ -9,8 +9,7 @@
 
 .. figure:: images/CI-planning-chart.png
 
-练习列表
---------
+**练习列表**
 
 .. toctree::
    :titlesonly:
