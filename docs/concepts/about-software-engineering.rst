@@ -53,9 +53,9 @@ ACM与IEEE Computer Society联合修定的SWEBOK（Software Engineering Body of 
 
 “敏捷开发”（Agile Development）被认为是软件工程的一个重要的发展。它强调软件开发应当是能够对未来可能出现的变化和不确定性作出全面反应的。
 
-敏捷开发被认为是一种“轻量级”的方法。在轻量级方法中最负盛名的应该是“极限编程”（Extreme Programming，简称为XP）。而与轻量级方法相对应的是“重量级方法”的存在。重量级方法强调以开发过程为中心，而不是以人为中心。重量级方法的例子比如CMM/PSP/TSP。
+敏捷开发被认为是一种“轻量级”的方法。在轻量级方法中最负盛名的应该是“极限编程”（Extreme Programming，简称为XP）。而与轻量级方法相对应的是“重量级方法”。重量级方法强调以开发过程为中心，而不是以人为中心。重量级方法的例子有CMM/PSP/TSP。
 
-面向方面的程序设计（Aspect Oriented Programming，简称AOP）被认为是近年来软件工程的另外一个重要发展。这里的方面指的是完成一个功能的对象和函数的集合。在这一方面相关的内容有泛型编程（Generic Programming）和模板。
+面向方面的程序设计（Aspect Oriented Programming，简称AOP）被认为是近年来软件工程的另一个重要发展。这里的“方面”指的是完成一个功能的对象和函数的集合。在这一方面相关的内容有泛型编程（Generic Programming）和模板。
 
 
 参考资料
