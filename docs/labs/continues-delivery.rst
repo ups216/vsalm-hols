@@ -398,6 +398,15 @@ Test Result Files    testresults.xml
 
 .. figure:: images/CI-Exercise-3-testing-generatedbug.png
 
+单击测试结果，我们还可以查看更为详细的测试信息，包括每个测试的执行情况和统计信息
+
+运行摘要：
+
+.. figure:: images/CI-Exercise-3-testing-viewresult-2.png
+
+测试结果：
+
+.. figure:: images/CI-Exercise-3-testing-viewresult-3.png
 
 练习四：配拉取请求实现质量门控制
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
