@@ -138,3 +138,151 @@
 .. figure:: images/Exercise-1-Open-work-detail-information.png
 
 
+练习二
+~~~~~
+
+本次练习中，我们将会学习如何使用TFS进行敏捷项目组合管理，可以允许大型公司和组织进行多团队协作开发。我们将在PartsUnlimited项目上实现多个团队协同工作。
+
+任务一：配置团队层级和区域路径
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.  点击右上角的 **管理服务器** 按钮（齿轮形状），进入TFS管理页面。此时从我们可以看到，PartsUnlimited项目目前只有一个默认团队，这个团队是创建项目时默认建立的。由于我们的示例项目包含前端网页和后台管理功能，所以我们可以再创建两个团队，前端开发团队和后台开发团队。
+由于每个团队各自只关心分配给他们的任务，所以我们要求积压工作视图只显示每个团队自己的需求和任务，这一点可以通过给 **不同团队** 分配 **不同的区域路径** 实现。现在我们可以通过点击 **新建团队** 按钮来创建团队。
+
+.. figure:: images/Exercise-2-Get-into-configure-page.png
+
+.. figure:: images/Exercise-2-Profile-of-team-project.png
+
+2.  在 **创建新团队** 窗口中，输入 **团队名称** 为“前端开发”，**不勾选** “使用团队名称创建区域路径”，然后点击 **创建团队** 。
+
+.. figure:: images/Exercise-2-Create-new-team.png
+
+3.  利用同样的方式，我们可以添加“后台开发”团队。团队添加后的界面应该如下图所示：
+
+.. figure:: images/Exercise-2-View-of-project-teams.png
+
+4.  接下来我们需要为我们的项目创建区域路径。区域路径是从我们 **样例项目背景** 的 **用户故事地图** 地图中提取出来的。点击 **区域** 选项卡，我们可以看到当前只有以项目名称命名的根区域。我们先选择根区域，然后点击 **新建子级** 按钮，弹出 **创建区域** 窗口，在 **区域名称** 中输入“前端页面”，点击 **保存并关闭** 。
+
+.. figure:: images/Exercise-2-View-of-initial-Area.png
+
+.. figure:: images/Exercise-2-Create-new-area.png
+
+5.  可以看到在根区域中下一级出现了“前端页面”区域。同理可以在根区域中加入“后台页面”、“系统功能”。同理，当我们选定“前端页面”这个区域时，点击 **新建子级** 按钮，我们就可以在该区域下新建子区域了。我们可以将用户故事地图中的区域信息按照这样的方式完整的录入到 **区域** 下。
+
+.. figure:: images/Exercise-2-View-of-Area-1.png
+
+.. figure:: images/Exercise-2-View-of-complete-Area.png
+
+6.  下面我们需要做的就是为 **每个团队** 设置各自的 **区域**。当需求或积压工作分配到某个区域路径时，只有与区域对应的团队成员才能看到这些需求或积压工作，其他团队成员看不见，也就是对其他团队屏蔽。根据项目的实际情况，我们应该将区域 **前端页面** 分配给 **前端开发** 团队，**后台页面** 和 **系统功能** 分配给 **后台开发** 团队。点击 **概述** 选项卡，进入项目的概述页面，然后点击 **前端开发** 团队，进入该团队的设置页面，然后点击 **区域** 选项卡，勾选 **前端页面** ，右键点击 **前端页面** ，在快捷菜单中选择 **包含子区域** ，此时 **前端开发** 团队与 **前端页面** 及其子区域进行了绑定。同理可以将 **后台开发** 团队与 **后台页面** 和 **系统功能** 及其子区域进行绑定。
+
+.. figure:: images/Exercise-2-Configure-Area-for-project-teams.png
+
+7.  接下来我们回到项目积压工作项页面，将一些前端需求和后台需求分配到相应的区域路径。选择 **首页框架** 和 **登陆页面** 这两个积压工作，将它们的 **区域路径** 字段值分别设为 **PartsUnlimited\前端页面\首页**、**PartsUnlimited\前端页面\用户相关**，将 **用户查询** 和 **用户审核** 的 **区域路径** 字段设为 **PartsUnlimited\后台页面\用户管理** 。
+
+.. figure:: images/Exercise-2-Put-some-WorkItem-to-team-Area.png
+
+8.  接下来我们来验证设置我们的设置。点击页面的标题部分的导航栏，选择 **浏览全部** 按钮，弹出项目和团队选择框，选择 **前端开发** 团队，点击 **导航**，进入该团队的积压工作页面，此时我们可以看到 **积压工作（backlog）** 列表中只有 **首页框架** 和 **登陆页面** 这两个积压工作项，与我们要求的完全一致。同理可以验证 **后台开发** 团队能看到的积压工作项也是我们刚才设置的。
+
+.. figure:: images/Exercise-2-WorkHub-of-frontDev.png
+
+.. figure:: images/Exercise-2-WorkHub-of-endDev.png
+
+练习三
+~~~~~
+
+在前面的练习中，我们已经了解了如何使用TFS进行多团队协作开发。在本练习中，我们将会学到如何使用看板以及看板是如何提高敏捷开发效率的。同时也会介绍下工作项标记的功能。这些功能都是可以根据团队的实际情况可定制的，而不需要修改过程模板文件的。
+
+任务一：介绍 **看板** 工具
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.  可以使用看板来跟踪工作项的状态，如查看当前正在进行的工作、工作的执行人员、下一步需要执行的工作以及完成的工作等。转到团队的“积压工作(backlog)”页并打开看板。 团队项目的所有参与者都可以使用看板更新工作状态。
+
+.. figure:: images/Exercise-3-View-of-backlog-items-kanban.png
+
+2.  此时我们可以看到kanban中共有四列，对应着backlog积压工作项的4个状态，分别是New（新建）、Approve（确认）、Committed（已提交）、Done（完成）。当前所有的工作项都处于New（新建）状态，每个工作项都是用一个小卡片表示。小卡片上当前显示工作项的标题和被指派的团队成员，我们也可以自定义工作项卡片上显示的字段，
+将我们所关心的内容字段显示在卡片上。点击kanban右上角的 **齿轮** 图标，进入看版设置窗口，点击左侧的 **字段** 标签，然后点击 **附加字段** 下的 **字段** **+** ，在出现的 **下拉框** 中选择想要在卡片上显示的字段。我们可以添加字段 **Area Path** （区域路径）字段和 **State**（状态）字段。
+
+.. figure:: images/Exercise-3-Add-field-to-card.png
+
+3.  回到kanpan视图，可以看到此时卡片上已出现了 **Area Path** 字段和 **State** 字段。当然我们可以在 **设置** 窗口中设置kanban的其它属性,如修改卡片的样式、颜色，在kanban中添加或移动状态列,设置每一列中工作项的最大个数，kanban中是否显示bug，设置工作日等等。
+
+.. figure:: images/Exercise-3-modify-column-for-card.png
+
+.. figure:: images/Exercise-3-modify-WIP-for-card.png
+
+.. figure:: images/Exercise-3-Add-notice-for-column.png
+
+.. figure:: images/Exercise-3-Add-style-for-card.png
+
+.. figure:: images/Exercise-3-Deal-with-bug-for-card.png
+
+4.  回到kanban视图，此时所有的工作项都分配给了 **诸葛亮** ，需要他对这些工作项进行审批确认。假设此时诸葛亮已经对前三个工作项进行了确认，那他需要将前三个工作项 **托拽** 到 **Approve** 列。
+
+.. figure:: images/Exercise-3-Drag-workitem-to-other-column-1.png
+
+.. figure:: images/Exercise-3-Drag-workitem-to-other-column-2.png
+
+.. figure:: images/Exercise-3-Drag-workitem-to-other-column-3.png
+
+5.  可以看到此时该三个工作项卡片上的 **State** 的值变为 **Approve** 了。此时诸葛亮可以将该三个工作项指派给其他开发人员，开发人员根据自己的完成情况来同样拖拽卡片，来更改工作项状态，使流程继续走下去。
+
+.. figure:: images/Exercise-3-Change-state-of-workitem-card.png
+
+任务二：使用 **标记**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.  使用标记可以很容易对工作项进行归类，方便以后对工作项的查询和刷选。
+
+2.  回到积压工作项列表。假设我们现在的积压工作有部分同时需要同时在手机端实现，我们就可以利用标记功能来对这些积压工作项进行标记，方便以后进行查找。例如，序号为1、4、6这三个工作项需要同时在手机端实现，那么可以分别打开这三个工作项，添加 **标记** “手机”。
+
+.. figure:: images/Exercise-3-Add-flag-to-workitem-1.png
+
+.. figure:: images/Exercise-3-Add-flag-to-workitem-2.png
+
+.. figure:: images/Exercise-3-Add-flag-to-workitem-3.png
+
+3.  接下来我们就可以利用 **标记** 来查看我们刷选工作项。点击工作项列表的右上角 **漏斗** 图标，会在下面出现标记 **手机** 字样，我们点击 **手机** 标签，会发现积压工作项列表中已经刷选出含有标记 **手机** 工作项。
+
+.. figure:: images/Exercise-3-filter-tag-from-workitems-1.png
+
+.. figure:: images/Exercise-3-filter-tag-from-workitems-2.png
+
+练习四
+~~~~~
+
+在本次练习中，我们将会学到如何查询工作项，以及根据查询来生成图表。利用图表我们能更好的展现项目当前的状态。
+
+任务一：创建和共享工作项图表
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.  我们现在回到积压工作项列表界面。假设现在我们想要更好的查看哪些工作项的状态是 **Approve** （已确认），都已指派给了哪些成员。点击 **查询** 选项卡进入工作项查询界面。
+
+.. figure:: images/Exercise-4-Navigate-to-Query-view.png
+
+2.  首先我们必须要定义一个查询，来获取我们想要的一些工作项数据。点击 **新建** 下拉按钮，选择 **新建查询** 。
+
+.. figure:: images/Exercise-4-Create-new-query.png
+
+3.  新建的查询默认会查询当前项目的所有状态的工作项。我们想要筛选出所有状态为 **Approve** 的工作项，所以必须要修改字段 **State** 的值为 **Approve** 。
+
+.. figure:: images/Exercise-4-modify-state-value-for-query.png
+
+4.  修改好查询条件后，我们可以运行查询来验证是不是我们想要的结果。点击 **运行查询** 图标，可以在查询定义的下面得到查询结果。
+
+.. figure:: images/Exercise-4-Result-of-query.png
+
+5.  当我们确认该查询无误后，可以将该查询保存到 **共享查询** 文件夹中。
+
+.. figure:: images/Exercise-4-Save-query-in-share-folder.png
+
+6.  接下来我们可以根据我们刚才新建的查询来创建图表了。点击 **图表** 选项卡进入创建图表的界面。
+
+.. figure:: images/Exercise-4-Navigate-to-Chart-view.png
+
+7.  图表创建完成后，返回 **图表** 界面后，可以看到刚才创建的图表已经显示出来了。我们还可以将该图表放入团队首页仪表盘，使每个团队成员都能看见。点击图表中的 **...** 按钮，选择 **添加到仪表盘-概述** 。
+
+.. figure:: images/Exercise-4-View-of-query-Chart.png
+
+8.  当我们返回到团队的首页后，我们可以在仪表盘中看到我们刚才放入仪表盘中的图表。
+
+.. figure:: images/Exercise-4-Chart-on-dashboard.png
