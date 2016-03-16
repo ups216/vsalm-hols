@@ -110,7 +110,7 @@ PartsUnlimited_masterCI/drop/artifacts/Publish 这个文件夹，并单击 **确
 =================== ===========
 Admin login          (对目标服务器有管理员权限的账户)
 P2ssw0rd             (以上账户的密码)
-Destination Folder   c:\\websites\\test 
+Destination Folder   c:\\websites-[TeamID]\\test 
 =================== ===========
 
 .. note:: 
