@@ -118,7 +118,7 @@ Destination Folder   c:\\websites-[TeamID]\\test
     为了简化实验的目的，我们已经在目标服务器上针对以下目录配置了IIS的站点
     
     ========== ========================== =====
-    TeamID               目录
+    TeamID               目录               URL
     ========== ========================== =====
     A           c:\\websites-A\\test       http://[实验服务器]:8022
     A           c:\\websites-A\\pro        http://[实验服务器]:8023
