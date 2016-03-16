@@ -117,8 +117,18 @@ Destination Folder   c:\\websites-[TeamID]\\test
     
     为了简化实验的目的，我们已经在目标服务器上针对以下目录配置了IIS的站点
     
-    * c:\\websites\\test 对应的站点地址为 http://[实验服务器]:8012/
-    * c:\\websites\\pro 对应的站点地址为 http://[实验服务器]:8013/
+    ========== ========================== =====
+    TeamID               目录
+    ========== ========================== =====
+    A           c:\\websites-A\\test       http://[实验服务器]:8022
+    A           c:\\websites-A\\pro        http://[实验服务器]:8023
+    B           c:\\websites-B\\test       http://[实验服务器]:8032
+    B           c:\\websites-B\\pro        http://[实验服务器]:8033
+    C           c:\\websites-C\\test       http://[实验服务器]:8042
+    C           c:\\websites-C\\pro        http://[实验服务器]:8043
+    D           c:\\websites-D\\test       http://[实验服务器]:8052
+    D           c:\\websites-D\\pro        http://[实验服务器]:8053
+    ========== ========================== =====
     
     实际工作中，可以使用其他的 PowerShell 脚本来完成这个工作，可以参考
     
