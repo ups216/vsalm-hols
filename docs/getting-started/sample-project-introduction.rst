@@ -2,7 +2,7 @@
 ---------------
 我们的动手实验将引用一个真实应用。这个样例叫做PartsUnlimited，是根据《凤凰项目》这本书为背景制作的。
 
-.. figure:: images/CoverOfThePhoenixProject.jpg
+.. figure:: images/the-phoenix-project-book.png
 
 本书讲述了一位IT经理临危受命，在未来董事的帮助和自己“三步工作法”理念的支撑下，最终挽救了一家具有悠久历史的汽车配件制造商的故事。
 小说揭示了管理现代IT组织与管理传统工厂的共通之处，让读者不仅能对如何管理IT组织心领神会，更重要的是将以完全不同于以往的视角看待自己的工作环境。
@@ -33,27 +33,25 @@
 3.下订单
 ~~~~~~~
 
-.. figure:: images/UserStoryOfOrder-1.jpg
-
-.. figure:: images/UserStoryOfOrder-2.jpg
-
 .. figure:: images/UserStoryOfOrder-3.jpg
 
 .. figure:: images/UserStoryOfOrder-4.jpg
 
-4.产品搜索
+4.主页促销
+~~~~~~~~~
+
+.. figure:: images/UserStoryOfSalePromotion-1.jpg
+
+.. figure:: images/UserStoryOfSalePromotion-2.jpg
+
+
+5.产品搜索
 ~~~~~~~~~
 
 .. figure:: images/UserStoryOfProductSearch-1.jpg
 
 .. figure:: images/UserStoryOfProductSearch-2.jpg
 
-5.主页促销
-~~~~~~~~~
-
-.. figure:: images/UserStoryOfSalePromotion-1.jpg
-
-.. figure:: images/UserStoryOfSalePromotion-2.jpg
 
 
 最后我们将用户故事放入Kanban中的待开发一栏
