@@ -84,12 +84,12 @@ Scrum主管（Scrum Master）：诸葛亮
 ======== ============== ========================= ====================
 用户      角色             用户名                            密码
 ======== ============== ========================= ====================
-刘备      PO              [TeamID]-liubei        （请联系讲师获取）
-诸葛亮    ScrumMaster     [TeamID]-zhugeliang    （请联系讲师获取）
-赵云      开发            [TeamID]-zhaoyun       （请联系讲师获取）
-关羽      开发            [TeamID]-guanyu        （请联系讲师获取）
-张飞      开发            [TeamID]- zhangfei     （请联系讲师获取）
-马超      测试            [TeamID]-machao        （请联系讲师获取）
-黄忠      测试            [TeamID]-huangzhong    （请联系讲师获取）
-庞统      架构            [TeamID]-pangtong      （请联系讲师获取）
+刘备      PO              [TeamID]-liubei          （请联系讲师获取）
+诸葛亮    ScrumMaster     [TeamID]-zhugeliang      （请联系讲师获取）
+赵云      开发            [TeamID]-zhaoyun         （请联系讲师获取）
+关羽      开发            [TeamID]-guanyu          （请联系讲师获取）
+张飞      开发            [TeamID]- zhangfei       （请联系讲师获取）
+马超      测试            [TeamID]-machao          （请联系讲师获取）
+黄忠      测试            [TeamID]-huangzhong      （请联系讲师获取）
+庞统      架构            [TeamID]-pangtong        （请联系讲师获取）
 ======== ============== ========================= =====================
