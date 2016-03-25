@@ -98,6 +98,6 @@ TFS 可以支持几人到几千人的不同团队规模，提供不同的单机�
     
 研发相关数据对任何企业都是关键的资产，TFS提供内置的数据备份和恢复方案供系统管理员使用完成日常的数据备份和简单易操作的数据恢复。
 
-.. figure:: images/tfs-server-deploy-model-02.png
+.. figure:: images/tfs-server-deploy-model-03.png
 
 
