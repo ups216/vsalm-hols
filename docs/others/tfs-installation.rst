@@ -100,4 +100,12 @@ TFS 可以支持几人到几千人的不同团队规模，提供不同的单机�
 
 .. figure:: images/tfs-server-deploy-model-03.png
 
+TFS 安装说明
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. toctree::
+   :titlesonly:
+
+   tfs-installation-small
+   tfs-installation-middle
+   tfs-installation-large
