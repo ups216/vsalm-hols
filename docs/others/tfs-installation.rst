@@ -106,6 +106,8 @@ TFS 安装说明
 .. toctree::
    :titlesonly:
 
+   tfs-installation-ad
+   tfs-installation-accounts
    tfs-installation-small
    tfs-installation-middle
    tfs-installation-large
