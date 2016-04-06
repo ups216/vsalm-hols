@@ -9,7 +9,6 @@ VSALM 动手实验
     
     本文档使用reST格式编写，内容托管于GitHub。文档内容正在持续编写中，所有标注为 |stub-icon| 的部分表示还未编写完毕，如果您在使用中遇到问题，可以通过我们的 `问题列表 <https://github.com/ups216/vsalm-hols/issues>`_ 来提交问题。
     
-    change
     
     本文档提供2个主要版本:
     
