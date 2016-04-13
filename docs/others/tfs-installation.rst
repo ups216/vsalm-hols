@@ -7,7 +7,7 @@ TFS 安装和配置
     
     本文档适用于：
     
-    * Team Foundation Server 2015 Update 2 RC2. 
+    * Team Foundation Server 2015 Update 2. 
     
 TFS 技术架构
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
