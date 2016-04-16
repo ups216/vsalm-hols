@@ -20,54 +20,99 @@
     
 1. 修改计算机名称
 
-新安装Windows Server将使用一个随机字符串作为机器名称，这非常不利于后期维护。所以我们需求修改这个名称。
+    新安装Windows Server将使用一个随机字符串作为机器名称，这非常不利于后期维护。所以我们需求修改这个名称。
 
-在 ** 服务器管理器 | 本地服务器 ** 中单击计算机名，并在弹出的对话中单击 **更改**，输入 新的计算机名称，单击 **确定** 
+    在 ** 服务器管理器 | 本地服务器 ** 中单击计算机名，并在弹出的对话中单击 **更改**，输入 新的计算机名称，单击 **确定** 
 
-.. figure:: images/ad-install-01-changecomputername.png
+    .. figure:: images/ad-install-01-changecomputername.png
 
-然后按照提示重新启动服务器。
+    然后按照提示重新启动服务器。
     
 2. 安装Windows活动目录服务
 
-服务器完成启动后，在 **服务器管理器 | 仪表盘** 上点击 **添加角色和功能** 
+    服务器完成启动后，在 **服务器管理器 | 仪表盘** 上点击 **添加角色和功能** 
 
-弹出的 **开始之前** 页面上点击 **下一步**
+    弹出的 **开始之前** 页面上点击 **下一步**
 
-.. figure:: images/ad-install-001.png
+    .. figure:: images/ad-install-001.png
 
-在 **选择安装类型** 页面上选择 **基于角色或基于功能的安装** 并点击 **下一步**
+    在 **选择安装类型** 页面上选择 **基于角色或基于功能的安装** 并点击 **下一步**
 
-.. figure:: images/ad-install-002.png
+    .. figure:: images/ad-install-002.png
 
-在 **选择目标服务器** 页面上选择 **从服务器池中选择服务器** 确保 **TFS** 服务器被选中，并点击 **下一步** 
+    在 **选择目标服务器** 页面上选择 **从服务器池中选择服务器** 确保 **TFS** 服务器被选中，并点击 **下一步** 
 
-.. figure:: images/ad-install-003.png
-    
-在 **选择服务器角色** 页面上选择 **Active Directory 域服务**，并在弹出的 **添加角色和功能向导** 对话框中，点击 **添加功能**，回到 **选择服务器角色** 页面上点击 **下一步**
+    .. figure:: images/ad-install-003.png
+        
+    在 **选择服务器角色** 页面上选择 **Active Directory 域服务**，并在弹出的 **添加角色和功能向导** 对话框中，点击 **添加功能**，回到 **选择服务器角色** 页面上点击 **下一步**
 
-.. figure:: images/ad-install-004.png
+    .. figure:: images/ad-install-004.png
 
-.. figure:: images/ad-install-004-1.png
+    .. figure:: images/ad-install-004-1.png
 
-在 **选择功能** 页面上，点击 **下一步** 
+    在 **选择功能** 页面上，点击 **下一步** 
 
-.. figure:: images/ad-install-005.png
+    .. figure:: images/ad-install-005.png
 
-在 **Active Directory 域服务** 页面上点击 **下一步** 
+    在 **Active Directory 域服务** 页面上点击 **下一步** 
 
-.. figure:: images/ad-install-006.png
+    .. figure:: images/ad-install-006.png
 
-在 **确认** 页面上点击 **安装** 
+    在 **确认** 页面上点击 **安装** 
 
-.. figure:: images/ad-install-007.png
+    .. figure:: images/ad-install-007.png
 
-等待安装完成，并在 **安装进度** 页面上点击 **关闭** 
+    等待安装完成，并在 **安装进度** 页面上点击 **关闭** 
 
-.. figure:: images/ad-install-007.png
+    .. figure:: images/ad-install-007.png
 
 
 3. 将服务器升级为域控制器
 
-4. 从新启动服务器
+    在 **服务器管理器** 上点击右上角的旗帜标志，在 **部署后配置** 中点击 **将此服务器提升为域控制器** 
+    
+    .. figure:: images/ad-promote-001.png
+    
+    在 **Active Directory 域服务配置向导** 中的 **部署配置** 页面中选择 **添加新林**，并输入以下信息
+    
+    ================    ===========
+    参数                 值
+    ================    ===========
+    根域名               vsalm.local
+    ================    ===========
+    
+    .. figure:: images/ad-promote-002.png
+    
+    在 **域控制器选项** 页面中，输入 **还原模式（DSRM）密码** 并点击 **下一步**
+    
+    .. figure:: images/ad-promote-003.png
+    
+    在 **DNS选项** 页面中，忽略错误信息，点击 **下一步** 
+    
+    .. figure:: images/ad-promote-004.png
+    
+    在 **其他选项** 页面中，接受 **NetBIOS域名** 的默认值，点击 **下一步** 
+    
+    .. figure:: images/ad-promote-005.png
+    
+    在 **路径** 和 **查看选项** 页面上接受默认值，并在 **先觉条件检查** 页面上，点击 **安装** 
+    
+    .. figure:: images/ad-promote-006.png
+    
+    等待安装完成，服务器将自动重新启动。
+
+.. attention::
+    
+    服务器从新启动后，您将需要使用 **域用户**登录计算机，您可以使用以下2中模式的域用户格式
+    
+    ================    ===========
+    格式                  例子
+    ================    ===========
+    NetBIOS格式          VSALM\Administrator
+    UPN                  Administrator@vsalm.local
+    ================    ===========
+    
+    .. figure:: images/ad-username.png
+    
+    
 
