@@ -105,7 +105,7 @@ SQL Server 2014 安装过程
     
     .. figure:: images/sql-install-013.png
     
-    等待安装完成
+    等待安装完成，并检查所有组件安装成功。
     
-    
+    .. figure:: images/sql-install-014.png
     
