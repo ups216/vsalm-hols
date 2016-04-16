@@ -43,11 +43,11 @@ TfsAdmin            日常TFS系统维护，包括安装配置和日常数据备
 
 .. figure:: images/ad-account-002.png
 
-在弹出的 **新建对象 - 组织单位** 对话框中，输入 **TFS**作为名称并点击　**确定** 
+在弹出的 **新建对象-组织单位** 对话框中，输入 **TFS** 作为名称并点击　**确定** 
 
 .. figure:: images/ad-account-003.png
 
-右键单击 **TFS** 这个组织单位，选择 **新建 | 用户** 
+右键单击 **TFS** 这个组织单位，选择 **新建|用户** 
 
 .. figure:: images/ad-account-004.png
 
@@ -58,6 +58,7 @@ TfsAdmin            日常TFS系统维护，包括安装配置和日常数据备
 填写密码，并仅仅勾选以下两个选项
 
 [x] 用户不能更改密码
+
 [x] 密码永不过期
 
 .. figure:: images/ad-account-005-2.png
