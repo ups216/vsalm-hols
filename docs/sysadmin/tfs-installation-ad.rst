@@ -113,6 +113,9 @@
     ================    ===========
     
 .. figure:: images/ad-username.png
-    
+
+至此，我们就为TFS的安装部署准备好了Acitve Directory域环境。
+
+
     
 
