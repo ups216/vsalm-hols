@@ -69,6 +69,7 @@ SQL Server 2014 安装过程
     
     - 数据库引擎服务
     - 全文和语义提取搜索
+    - Analysis Service 
     - Reporting Services - 本机
     - 客户端连接工具
     - 客户端连接工具向后兼容性
