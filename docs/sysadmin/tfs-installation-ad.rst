@@ -42,29 +42,29 @@
 
 在 **选择目标服务器** 页面上选择 **从服务器池中选择服务器** 确保 **TFS** 服务器被选中，并点击 **下一步** 
 
-.. figure:: image/ad-install-003.png
+.. figure:: images/ad-install-003.png
     
 在 **选择服务器角色** 页面上选择 **Active Directory 域服务**，并在弹出的 **添加角色和功能向导** 对话框中，点击 **添加功能**，回到 **选择服务器角色** 页面上点击 **下一步**
 
-.. figure:: image/ad-install-004.png
+.. figure:: images/ad-install-004.png
 
-.. figure:: image/ad-install-004-1.png
+.. figure:: images/ad-install-004-1.png
 
 在 **选择功能** 页面上，点击 **下一步** 
 
-.. figure:: image/ad-install-005.png
+.. figure:: images/ad-install-005.png
 
 在 **Active Directory 域服务** 页面上点击 **下一步** 
 
-.. figure:: image/ad-install-006.png
+.. figure:: images/ad-install-006.png
 
 在 **确认** 页面上点击 **安装** 
 
-.. figure:: image/ad-install-007.png
+.. figure:: images/ad-install-007.png
 
 等待安装完成，并在 **安装进度** 页面上点击 **关闭** 
 
-.. figure:: image/ad-install-007.png
+.. figure:: images/ad-install-007.png
 
 
 3. 将服务器升级为域控制器
