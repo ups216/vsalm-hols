@@ -112,7 +112,7 @@
     UPN                  Administrator@vsalm.local
     ================    ===========
     
-    .. figure:: images/ad-username.png
+.. figure:: images/ad-username.png
     
     
 
