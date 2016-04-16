@@ -110,3 +110,6 @@ SQL Server 2014 安装过程
     
     .. figure:: images/sql-install-014.png
     
+
+至此，我们就完成TFS所需要的SQL Server环境的安装部署。
+
