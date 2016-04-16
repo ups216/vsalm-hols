@@ -108,7 +108,7 @@
     ================    ===========
     格式                  例子
     ================    ===========
-    NetBIOS格式          VSALM\Administrator
+    NetBIOS格式          VSALM\\Administrator
     UPN                  Administrator@vsalm.local
     ================    ===========
     
