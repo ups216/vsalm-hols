@@ -64,7 +64,7 @@
 
     等待安装完成，并在 **安装进度** 页面上点击 **关闭** 
 
-    .. figure:: images/ad-install-007.png
+    .. figure:: images/ad-install-008.png
 
 
 3. 将服务器升级为域控制器
