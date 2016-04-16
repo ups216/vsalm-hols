@@ -108,6 +108,7 @@ TFS 安装说明
 
    tfs-installation-ad
    tfs-installation-accounts
+   tfs-installation-sqlserver
    tfs-installation-small
    tfs-installation-middle
    tfs-installation-large
