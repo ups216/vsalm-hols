@@ -14,6 +14,10 @@ DevOps敏捷开发动手实验
     
     - stable: 稳定版本，按照VSALM企业版进行标识，如：v2015.1 表示所对应的是 2015 Update 1版本
     - latest: 最新版本，持续更新。
+    
+    版本记录：
+    
+    - v2015.2: 当前最新稳定版本，适用于Team Foundation Server 2015 Update 2中文版
 
 
 概述
@@ -49,11 +53,6 @@ DevOps敏捷开发动手实验
     getting-started/index
     labs/index
     
-
-适用版本
---------
-
-- Team Foundation Server 2015 Update 2 中文版
 
 参考资料
 --------
