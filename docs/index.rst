@@ -1,6 +1,6 @@
 .. _rst_vsalm-hoc
 
-VSALM 动手实验
+DevOps敏捷开发动手实验
 =================
 
 .. |stub-icon| unicode:: U+1F527
@@ -19,7 +19,7 @@ VSALM 动手实验
 概述
 -----
 
-Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifecycle Managemnet）是微软基于Visual Studio产品线所提供的软件管理平台，其中包括如：
+微软DevOps工具链是基于Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifecycle Managemnet）的软件管理平台，其中包括如下能力：
 
 - 产品管理 
 - 需求管理
@@ -31,7 +31,9 @@ Visual Studio 应用生命周期管理（VSALM - Visual Studio Application Lifec
 - 发布管理（Release Management）
 - 自动化和数据分析与报表 
 
-等软件开发过程中所需的管理能力和工具。具体信息可以通过 `Visual Studio <https://www.visualstudio.com/>`_ 产品主页进行了解，或者参考本文档中 关于VSALM 部分。
+具体信息可以通过 `Visual Studio <https://www.visualstudio.com/>`_ 产品主页进行了解，或者参考本文档中 关于VSALM 部分。
+
+本动手实验希望通过模拟一个产品从需求到上线的全过程让参与者感受到微软DevOps工具链端到端的管理能力。
 
 :更新日期: |today|
 :作者: **徐磊** ， **何超** 
