@@ -9,5 +9,5 @@ Visual Studio and other related tools.
 
 ## Release Note
 
-- 2015.2 updated to use Team Foundation Server 2015 update 2 Chinese version
+- 2015.2 @2016-4-17 updated to use Team Foundation Server 2015 update 2 Chinese version
 
