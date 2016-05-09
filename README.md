@@ -6,3 +6,8 @@ Visual Studio and other related tools.
 1. Hands on labs 
 2. Code examples
 3. Setup scripts
+
+## Release Note
+
+- 2015.2 updated to use Team Foundation Server 2015 update 2 Chinese version
+
