@@ -18,6 +18,7 @@ DevOps敏捷开发动手实验
     版本记录：
     
     - v2015.2: 当前最新稳定版本，适用于Team Foundation Server 2015 Update 2中文版
+    - gitlab support
 
 
 概述
